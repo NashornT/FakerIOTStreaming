@@ -61,8 +61,6 @@ class FakerIot:
                 df.to_csv(output_path, index=False)
                 print(f"Dados gerados e salvos como {output_path}")
 
-            #df.to_json(output_path)
-
 
             messages = []
             for index, row in df.iterrows():
@@ -89,7 +87,7 @@ class FakerIot:
             future = self.publisher.publish(self.topic_path, data=batch_message)
             print(f"Publicado lote: {future.result()} - {len(messages)} mensagens")
 
-            # Espera 30 segundos antes de gerar o próximo lote
+            # Espera x segundos antes de gerar o próximo lote
             if self.batchs != 1:
                 sleep(self.time)
             self.batchs -= 1
