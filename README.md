@@ -3,13 +3,6 @@ Este projeto é um script simples para a geração de dados IoT falsos usando a 
 Ele permite a configuração de iterações, intervalo de tempo entre as iterações e a opção de gerar arquivos CSV com os dados falsos.
 Além de possibilitar a execução paralela para representar diversos dispositivos gerando dados
 
-## Pré-requisitos
-Antes de executar o script, você precisará instalar a biblioteca FakerIot. Isso pode ser feito com o seguinte comando:
-
-
-```bash
-pip install faker-iot
-```
 
 ## Como usar
 O script pode ser executado diretamente da linha de comando e possui três parâmetros principais:
